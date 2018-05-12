@@ -165,6 +165,7 @@
   </div>
 </template>
 <style lang="scss" scoped>
+
   .demo4 {
   	width: 402px !important;
   	.ul-item {

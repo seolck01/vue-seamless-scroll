@@ -39,6 +39,7 @@
 </script>
 
 <style lang="scss">
+
   #app {
   	padding-bottom: 100px;
   }
