@@ -5,6 +5,7 @@ const webpack = require('webpack')
 const path = require('path')
 const options = require('./options')
 const base = require('./webpack.base.js')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const polyfill = require('babel-polyfill')
 
 function resolve(dir) {
