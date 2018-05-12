@@ -9,8 +9,7 @@ function resolve(dir) {
 }
 
 const config = merge(base, {
-	watch: true,
-	devtool: '#eval-source-map',
+	mode: 'development',
 	entry: options.paths.resolve('examples-src/index.js'),
 	output: {
 		filename: 'examples.bundle.js',

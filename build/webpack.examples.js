@@ -12,7 +12,7 @@ function resolve(dir) {
 }
 
 const config = merge(base, {
-	// entry: options.paths.resolve('examples-src/index.js'),
+	mode: 'production',
 	entry: ['babel-polyfill', options.paths.resolve('examples-src/index.js')],
 	output: {
 		filename: 'examples.bundle.js',

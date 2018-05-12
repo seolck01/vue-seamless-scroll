@@ -5,15 +5,13 @@
 	"main": "dist/vue-seamless-scroll.min.js",
 	"scripts": {
 		"dev":
-			"cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.dev.js --mode development --open --inline --hot",
-		"build:debug":
-			"cross-env NODE_ENV=debug webpack --config build/webpack.dist.js",
+			"webpack-dev-server --config ./build/webpack.dev.js --open --inline --hot",
 		"build:prod":
-			"cross-env NODE_ENV=production webpack --config build/webpack.dist.js",
+			"webpack --config build/webpack.dist.js",
 		"build:examples":
-			"webpack --config build/webpack.examples.js --mode production",
+			"webpack --config build/webpack.examples.js",
 		"build:all":
-			"npm run build:debug && npm run build:prod && npm run build:examples"
+			"npm run build:prod && npm run build:examples"
 	},
 	"author": "chenxuan",
 	"repository": {
@@ -29,7 +27,6 @@
 		"babel-loader": "^7.1.4",
 		"babel-polyfill": "^6.26.0",
 		"babel-preset-env": "^1.7.0",
-		"cross-env": "^5.1.5",
 		"css-loader": "^0.28.11",
 		"deep-assign": "^2.0.0",
 		"extract-text-webpack-plugin": "^3.0.2",
