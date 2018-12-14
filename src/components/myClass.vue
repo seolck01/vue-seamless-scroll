@@ -1,9 +1,9 @@
 <template>
   <div ref="wrap">
-    <div :style="leftSwitch" v-if="isHorizontal" :class="leftSwitchClass" @click="leftSwitchClick">
+    <div :style="leftSwitch" v-if="isHorizontal" @mouseenter="enter" @mouseleave="leave" :class="leftSwitchClass" @click="leftSwitchClick">
       <slot name="left-switch"></slot>
     </div>
-    <div :style="rightSwitch" v-if="isHorizontal" :class="rightSwitchClass" @click="rightSwitchClick">
+    <div :style="rightSwitch" v-if="isHorizontal" @mouseenter="enter" @mouseleave="leave" :class="rightSwitchClass" @click="rightSwitchClick">
       <slot name="right-switch"></slot>
     </div>
     <div ref="realBox" :style="pos" @mouseenter="enter" @mouseleave="leave" @touchstart="touchStart" @touchmove="touchMove" @touchend="touchEnd">
