@@ -116,7 +116,7 @@ var Component = __webpack_require__(2)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/xmly/Documents/vue-seamless-scroll/src/components/myClass.vue"
+Component.options.__file = "/Users/Charles/Desktop/myproject/vue-seamless-scroll/src/components/myClass.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] myClass.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -657,12 +657,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     class: _vm.leftSwitchClass,
     style: (_vm.leftSwitch),
     on: {
+      "mouseenter": _vm.enter,
+      "mouseleave": _vm.leave,
       "click": _vm.leftSwitchClick
     }
   }, [_vm._t("left-switch")], 2) : _vm._e(), _vm._v(" "), (_vm.isHorizontal) ? _c('div', {
     class: _vm.rightSwitchClass,
     style: (_vm.rightSwitch),
     on: {
+      "mouseenter": _vm.enter,
+      "mouseleave": _vm.leave,
       "click": _vm.rightSwitchClick
     }
   }, [_vm._t("right-switch")], 2) : _vm._e(), _vm._v(" "), _c('div', {
